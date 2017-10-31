@@ -1,18 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.mitre.dsmiley.httpproxy</groupId>
-  <artifactId>smiley-http-proxy-servlet</artifactId>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <groupId>ru.javahero.httpproxy</groupId>
+  <artifactId>http-proxy-servlet</artifactId>
   <version>1.10-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Smiley's HTTP Proxy Servlet</name>
-  <description>An HTTP Proxy (aka gateway) in the form of a Java servlet. An
+  <name>HTTP Proxy Servlet</name>
+  <description>HTTP Proxy (aka gateway) in the form of a Java servlet. An
     HTTP proxy is useful for AJAX applications to communicate with web
-    accessible services on hosts other than where the web application is hosted.
+    accessible services on hosts other than where the web application is hosted. Fork of Smiley's HTTP Proxy Servlet.
   </description>
 
-  <url>https://github.com/dsmiley/HTTP-Proxy-Servlet</url>
+  <url>https://github.com/Voropash/HTTP-Proxy-Servlet</url>
 
   <licenses>
     <license>
@@ -24,17 +30,15 @@
 
   <developers>
     <developer>
-      <name>David Smiley</name>
-      <email>dsmiley@apache.org</email>
-      <!-- I used to work for MITRE for many years but I don't anymore. -->
-      <!--<organization>MITRE</organization>-->
+      <name>Sergey Voropaev</name>
+      <email>voropash@gmail.com</email>
     </developer>
   </developers>
 
   <scm>
-    <url>https://github.com/dsmiley/HTTP-Proxy-Servlet</url>
-    <connection>scm:git:https://dsmiley@github.com/dsmiley/HTTP-Proxy-Servlet.git</connection>
-    <developerConnection>scm:git:git@github.com:dsmiley/HTTP-Proxy-Servlet.git</developerConnection>
+    <url>https://github.com/Voropash/HTTP-Proxy-Servlet</url>
+    <connection>scm:git:https://voropash@github.com/Voropash/HTTP-Proxy-Servlet.git</connection>
+    <developerConnection>scm:git:git@github.com:voropash/HTTP-Proxy-Servlet.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -50,11 +54,6 @@
   <prerequisites>
     <maven>3.0.4</maven>
   </prerequisites>
-
-  <!-- To check for new plugins and dependencies:
-  mvn org.codehaus.mojo:versions-maven-plugin:2.3:display-plugin-updates
-  mvn org.codehaus.mojo:versions-maven-plugin:2.3:display-dependency-updates
-  -->
 
   <dependencies>
 
@@ -239,13 +238,13 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>ossrh</id>
+      <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
     <repository>
-      <id>ossrh</id>
+      <id>nexus-releases</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
-  
+
 </project>
