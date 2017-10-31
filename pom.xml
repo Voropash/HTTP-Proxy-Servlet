@@ -9,7 +9,7 @@
 
   <groupId>ru.javahero.httpproxy</groupId>
   <artifactId>http-proxy-servlet</artifactId>
-  <version>1.10</version>
+  <version>1.10-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>HTTP Proxy Servlet</name>
