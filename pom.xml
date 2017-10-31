@@ -19,7 +19,7 @@
         Servlet.
     </description>
 
-    <url>https://github.com/Voropash/HTTP-Proxy-Servlet</url>
+    <url>https://github.com/voropash/HTTP-Proxy-Servlet</url>
 
     <licenses>
         <license>
@@ -38,7 +38,7 @@
 
     <scm>
         <url>https://github.com/Voropash/HTTP-Proxy-Servlet</url>
-        <connection>scm:git:https://voropash@github.com/Voropash/HTTP-Proxy-Servlet.git</connection>
+        <connection>scm:git:https://voropash@github.com/voropash/HTTP-Proxy-Servlet.git</connection>
         <developerConnection>scm:git:git@github.com:voropash/HTTP-Proxy-Servlet.git</developerConnection>
         <tag>http-proxy-servlet-1.10</tag>
     </scm>
